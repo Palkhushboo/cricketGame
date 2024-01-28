@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>cricket</title>
+ <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+ <main>
+  <div >
+   <h1>Bat Ball Stump Game</h1>
+   
+   <button class="btn" onclick="let systemchoice=
+   GenerateComputerChoice();
+   let resultmsg=GetResult('Bat',systemchoice);
+   showAlert('Bat',systemchoice,resultmsg);
+ "><img src="th.jpeg" class="image" alt="bat-image"></button>
+   
+  
+   <button class="btn"  
+    onclick= " let Choice=GenerateComputerChoice();  
+  resultmsg= GetResult('Ball',Choice);
+  showAlert('Ball',Choice,resultmsg);
+ "><img src="ball_53876-25477.webp" class="image" alt="ball-image"></button>
+
+
+   <button class="btn" onclick="let computerChoice=GenerateComputerChoice();
+   resultmsg=GetResult('Stump',computerChoice);
+   showAlert('Stump',computerChoice,resultmsg);
+ "><img src="th (1).jpeg" class="image" alt="Stump"></button>
+ <h3 id="won"></h3>
+ <h3 id="lost"></h3>
+ <h3 id="score"></h3>
+ <h3 id="result"></h3>
+
+
+ <button  onclick="localStorage.clear()
+ resetScore()"><b>Reset</b></button>
+  </div>
+
+ </main>
+ 
+ <script src="cricket.js"></script>
+</body>
+</html>
